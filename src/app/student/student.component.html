@@ -1,0 +1,12 @@
+Hello {{username}}
+<br>
+<button (click)="getStudents()">Get List Of Students</button>
+<button (click)="logOut()">Log out</button>
+<br>
+<div class="contaniner">
+  <ul>
+    <li *ngFor="let student of students">
+      {{student.id}} -- {{student.age}} -- {{student.name}} -- {{student.address}}
+    </li>
+  </ul>
+</div>
